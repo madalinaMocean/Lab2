@@ -5,8 +5,8 @@ import java.util.Arrays;
 import java.util.Collections;
 
 public class Math {
-    private int[] array=new int[]{10,2,5,8,9,30,0};
-    public int min(){
+    //private int[] array=new int[]{10,2,5,8,9,30,0};
+    public static int min(int[] array){
         int min=array[0];
         for (int j : array) {
             if (j < min) {
@@ -15,7 +15,13 @@ public class Math {
         }
         return min;
     }
-    public int max(){
+
+    /**
+     * Max int.
+     *
+     * @return the int
+     */
+    public static int max(int[] array){
         int max=array[0];
         for (int j : array) {
             if (j > max) {
@@ -24,7 +30,7 @@ public class Math {
         }
         return max;
     }
-    public int sumMax(){
+    public int sumMax(int[] array){
         int[] copyArray=new int[array.length];
         for(int i=0; i< array.length; i++){
             copyArray[i]=array[i];
@@ -40,7 +46,7 @@ public class Math {
         return sum;
     }
 
-    public int sumMin(){
+    public int sumMin(int[] array){
         int[] copyArray=new int[array.length];
         for(int i=0; i< array.length; i++){
             copyArray[i]=array[i];
