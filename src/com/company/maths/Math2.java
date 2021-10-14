@@ -1,8 +1,18 @@
 package com.company.maths;
 
 
+/**
+ * The type Math 2.
+ */
 public class Math2 {
 
+    /**
+     * Make array int [ ].
+     * parses an int into an array
+     *
+     * @param nr the nr
+     * @return the int [ ]
+     */
     public static int[] makeArray(int nr){
         int len=String.valueOf(nr).length();
         int[] arr =new int[len];
@@ -19,12 +29,26 @@ public class Math2 {
         return arr;
     }
 
+    /**
+     * Print array.
+     * prints an array
+     *
+     * @param array the array
+     */
     public static void printArray(int[] array){
         for(int i=0; i< array.length; i++){
             System.out.print(array[i]+",");
         }
     }
 
+    /**
+     * Sum int [ ].
+     * returns a sum in form af a list
+     *
+     * @param arr1 the arr 1
+     * @param arr2 the arr 2
+     * @return the int [ ]
+     */
     public static int[] sum(int[] arr1, int[] arr2){
         int tr=0;
         int[] s=new int[arr1.length+1]; //nu are cum sa fie mai mare de atata rezultatul
@@ -42,10 +66,25 @@ public class Math2 {
         return s;
     }
 
+    /**
+     * Compare arrays boolean.
+     * compares two arrays in order to subtract
+     *
+     * @param arr1 the arr 1
+     * @param arr2 the arr 2
+     * @return the boolean
+     */
     public static boolean compareArrays(int[] arr1, int[] arr2){
         return toInt(arr1) > toInt(arr2); //ternary operator comparison
     }
 
+    /**
+     * To int int.
+     * parses an array into an int
+     *
+     * @param arr1 the arr 1
+     * @return the int
+     */
     public static int toInt(int[] arr1){ //used only for comparison
         int result=0;
         int offset=1;
@@ -56,6 +95,14 @@ public class Math2 {
         return result;
     }
 
+    /**
+     * Diff int [ ].
+     * returns difference in form of a list
+     *
+     * @param arr1 the arr 1
+     * @param arr2 the arr 2
+     * @return the int [ ]
+     */
     public static int[] diff(int[] arr1, int[] arr2){
         int tr=0;
         int[] copyArr1;
@@ -113,6 +160,14 @@ public class Math2 {
     }
 
 
+    /**
+     * Mul int [ ].
+     * returns a product in form of a list
+     *
+     * @param arr1 the arr 1
+     * @param nr   the nr
+     * @return the int [ ]
+     */
     public static int[] mul(int[] arr1, int nr){
         int t1=0;
         int t2=0;
@@ -132,6 +187,15 @@ public class Math2 {
         return m;
     }
 
+    /**
+     * Div int [ ].
+     * returns a division in form of a list
+     *
+     * @param arr1 the arr 1
+     * @param nr   the nr
+     * @return the int [ ]
+     * @throws Exception the exception
+     */
     public static int[] div(int[] arr1, int nr) throws Exception {
         int[]rez=new int[arr1.length];
 

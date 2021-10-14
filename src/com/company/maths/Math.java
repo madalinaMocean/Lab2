@@ -4,8 +4,18 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collections;
 
+/**
+ * The type Math.
+ */
 public class Math {
-    //private int[] array=new int[]{10,2,5,8,9,30,0};
+    /**
+     * Min int.
+     * returns smallest elem from an array
+     *
+     * @param array the array
+     * @return the int
+     */
+//private int[] array=new int[]{10,2,5,8,9,30,0};
     public static int min(int[] array){
         int min=array[0];
         for (int j : array) {
@@ -18,7 +28,9 @@ public class Math {
 
     /**
      * Max int.
+     * returns biggest elem from an array
      *
+     * @param array the array
      * @return the int
      */
     public static int max(int[] array){
@@ -30,6 +42,14 @@ public class Math {
         }
         return max;
     }
+
+    /**
+     * Sum max int.
+     * returns the maximum sum from an array
+     *
+     * @param array the array
+     * @return the int
+     */
     public int sumMax(int[] array){
         int[] copyArray=new int[array.length];
         for(int i=0; i< array.length; i++){
@@ -46,6 +66,13 @@ public class Math {
         return sum;
     }
 
+    /**
+     * Sum min int.
+     *  returns the minimum sum from an array
+     *
+     * @param array the array
+     * @return the int
+     */
     public int sumMin(int[] array){
         int[] copyArray=new int[array.length];
         for(int i=0; i< array.length; i++){
